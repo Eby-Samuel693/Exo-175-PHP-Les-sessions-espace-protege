@@ -9,13 +9,20 @@
 </head>
 <body>
 
-    <p>Veuillez entrer le mot de passe :</p>
-    <form action="index.php" method="post">
-        <p>
-            <input type="password" name="mot_de_passe" />
-            <input type="submit" value="Valider" />
-        </p>
-    </form>
-
+    <?php
+    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ==  "SamSoul") // Si le mot de passe est bon
+    {
+        // On affiche les codes
+        ?>
+        <h1>bienjoue</h1>
+        <p>j'ai mis  3h pour cette exo :( </p>
+        <p>ci logique pourtant</p>
+        <?php
+    }
+    else // Sinon, on affiche un message d'erreur
+    {
+        echo '<p>Mot de passe incorrect</p>';
+    }
+    ?>
 </body>
 </html>
