@@ -11,7 +11,7 @@
 
 
         <p>Veuillez entrer le mot de passe :</p>
-        <form action="page1.php.php" method="post">
+        <form action="page1.php" method="post">
             <p>
                 <input type="password" name="mot_de_passe" />
                 <input type="submit" value="Valider" />
